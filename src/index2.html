@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Here is where you get to know who is Driss Boumlik.">
         <meta name="author" content="Driss Boumlik">
         <link rel="icon" type="image/x-icon" href="assets/img/me/icon.ico">
-        
-        <!-- Fonts -->
-        <link rel="preload" href="build/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="build/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="build/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="build/assets/Harmattan-Regular.bb28f5f9.ttf" as="font" type="font/ttf" crossorigin>
 
-        <link rel="preload" as="style" href="build/external/all.min.css">
-        <link rel="stylesheet" href="build/external/all.min.css" type="text/css">
-        <link rel="preload" as="style" href="build/external/bootstrap.min.css">
-        <link rel="stylesheet" href="build/external/bootstrap.min.css" type="text/css">
-        <link rel="preload" as="style" href="build/assets/app.7e624d58.css">
-        <link rel="stylesheet" href="build/assets/app.7e624d58.css" type="text/css">
-        <script src="plugins/particles/particles.min.js"></script>
-        <script type="module" src="build/assets/app.43b90fef.js"></script>
-        
-        <link rel="stylesheet" href="build/assets/idf.0ea1dd09.css" type="text/css">
-        <script type="module" src="build/assets/idf.45ca9b38.js"></script>
+        <!-- Fonts -->
+        <link rel="preload" href="assets/fonts/Harmattan-Regular.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="assets/fonts/Harmattan-Bold.ttf" as="font" type="font/ttf" crossorigin>
+
+        <link rel="preload" as="style" href="app.sass">
+        <link rel="preload" as="style" href="external.sass">
+        <link rel="stylesheet" href="external.sass" type="text/css">
+        <link rel="stylesheet" href="app.sass" type="text/css">
+        <script defer src="assets/plugins/particles/particles.min.js"></script>
 
         <title>Senior PHP/Laravel Developer | IxDF | Driss Boumlik</title>
     </head>
@@ -31,62 +23,7 @@
         <div class="wrapper">
 
             <div id="about" class="about section-wrapper py-md-5rem py-3rem">
-                <div class="section about-header">
-                    <div id="particles-js" class="particles-js"></div>
-                    <div class="container headline-wrapper">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="profile-data">
-                                        <div class="profile-name" id="profile-name">Driss Boumlik</div>
-                                        <div class="social-icons mt-3">
-                                            <div class="social-icons-wrapper">
-                                                <ul class="social-icons-items list-group list-group-horizontal align-items-start">
-                                                    <li class="social-icon-item list-group-item border-0">
-                                                        <a href="https://github.com/drissboumlik" target="_blank" rel="noopener"
-                                                           aria-label="Follow me on github" data-toggle="tooltip"
-                                                           data-placement="top" class="text-decoration-none"
-                                                           data-bs-original-title="Follow me on github">
-                                                            <span class="social-icon"><i class="fa-brands fa-github"></i></span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="social-icon-item list-group-item border-0">
-                                                        <a href="https://drissboumlik.com/" target="_blank" rel="noopener"
-                                                           aria-label="Follow me on github" data-toggle="tooltip"
-                                                           data-placement="top" class="text-decoration-none"
-                                                           data-bs-original-title="Follow me on github">
-                                                            <span class="social-icon"><i class="fa-solid fa-globe"></i></span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="social-icon-item list-group-item border-0">
-                                                        <a href="https://linkedin.com/in/drissboumlik" target="_self"
-                                                           rel="noopener" aria-label="Get in touch" data-toggle="tooltip"
-                                                           data-placement="top" class="text-decoration-none"
-                                                           data-bs-original-title="Get in touch">
-                                                            <span class="social-icon"><i class="fa-brands fa-linkedin"></i></span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="social-icon-item list-group-item border-0">
-                                                        <a href="https://twitter.com/drissboumlik" target="_blank" rel="noopener"
-                                                           aria-label="twitter" data-toggle="tooltip" data-placement="top"
-                                                           class="text-decoration-none"
-                                                           data-bs-original-title="twitter">
-                                                                <span class="social-icon"><i
-                                                                        class="fa-brands fa-x-twitter"></i></span></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-image">
-                                        <img src="assets/img/me/circle-256_2.png" alt="Profile Image"
-                                             width="100" height="100" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <%- include('views/partials/about-header.ejs') -%>
             </div>
             
             <div id="page-wide" class="page page-wide container-fluid py-5 px-2">
@@ -94,14 +31,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-                            <h2 class="text-center font-weight-bolder page-content-headline">
-                                <span id="greeting" class="d-block">Hi Alicea & Hiring Team 👋</span></h2>
             
-                            <h3>First things first...</h3>
-                            <div class="report-actions highlight-box px-3 py-2">
-                                <p class="m-0">
-                                    I want to help make a <span class="tc-blue fw-bold">dent in the universe</span> 🍀🍀🍀.</p>
-                            </div>
             
                             <h3>Who am I ?</h3>
                             <p>I'm <a href="https://drissboumlik.com/about" target="_blank">Driss Boumlik</a>, 34 years old,

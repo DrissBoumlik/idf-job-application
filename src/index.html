@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Here is where you get to know who is Driss Boumlik.">
+	<meta name="author" content="Driss Boumlik">
+	<link rel="icon" type="image/x-icon" href="assets/img/me/icon.ico">
+
+	<!-- Fonts -->
+	<link rel="preload" href="assets/fonts/Harmattan-Regular.ttf" as="font" type="font/ttf" crossorigin>
+	<link rel="preload" href="assets/fonts/Harmattan-Bold.ttf" as="font" type="font/ttf" crossorigin>
+
+	<link rel="preload" as="style" href="app.sass">
+	<link rel="preload" as="style" href="external.sass">
+	<link rel="stylesheet" href="external.sass" type="text/css">
+	<link rel="stylesheet" href="app.sass" type="text/css">
+	<script defer src="assets/plugins/particles/particles.min.js"></script>
+	<title>Laravel Backend Developer | Driss Boumlik</title>
+</head>
+
+<body class="dark-mode">
+	<div id="app">
+		<div class="wrapper">
+			<div id="about" class="about section-wrapper py-md-5rem py-3rem">
+				<%- include('views/partials/about-header.ejs') -%>
+			</div>
+
+			<div id="page-wide" class="page page-wide container-fluid py-5 px-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+							<%- include('views/sections/greeting.ejs') -%>
+							<div class="sections">
+								<%- include('views/sections/aboutme.ejs') -%>
+								<%- include('views/sections/my-journey.ejs') -%>
+								<%- include('views/sections/why-work-with-me.ejs') -%>
+								<%- include('views/sections/community.ejs') -%>
+								<%- include('views/sections/outside-work.ejs') -%>
+								<%- include('views/partials/lets-connect.ejs') -%>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<%- include('views/partials/footer') -%>
+		</div>
+		<%- include('views/partials/darkmode-btn') -%>
+	</div>
+	<script type="module" src="main.js"></script>
+</body>
+
+</html>

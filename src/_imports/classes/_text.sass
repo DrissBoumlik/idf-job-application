@@ -1,0 +1,61 @@
+.ff-primary
+    font-family: "IstokWeb", serif !important
+
+.funny-font
+    font-family: "MyEpicSelfie", serif !important
+
+//.tiny-font
+//    font-family: "Harmattan", serif !important
+
+.text-decoration-underline
+    text-decoration: underline
+
+.capitalize-first-letter:first-letter
+    text-transform: capitalize
+
+.white-space-normal
+    white-space: normal
+.white-space-pre-wrap
+    white-space: pre-wrap
+.word-break-break-word
+    word-break: break-word
+.white-space-nowrap
+    white-space: nowrap
+
+.bold
+    font-weight: 900
+.font-weight-bolder
+    font-weight: bolder
+.line-height-40
+    line-height: 40px
+
+.link-undecorated
+    color: $tc-white
+    &:hover
+        text-decoration: underline
+        color: $tc-white
+
+.fs-small
+    font-size: 0.8rem
+
+.text-transform-unset
+    text-transform: unset !important
+
+.animated-underline
+    position: relative
+    &:hover::after, &:focus::after, &.active::after
+        opacity: 1
+         //transform: translate3d(0, 0.2em, 0)
+        transform: scale(1)
+    &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 0.1em
+        background-color: $tc-black-light
+        opacity: 0
+        transition: opacity 300ms, transform 300ms
+        transform: scale(0)
+        transform-origin: center

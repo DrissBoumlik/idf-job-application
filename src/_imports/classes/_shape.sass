@@ -1,0 +1,22 @@
+$shape: 5
+@while 100 >= $shape
+    .square-#{$shape}
+        +shape(#{$shape}px, #{$shape}px)
+    $shape: $shape + 5
+
+$rounded: 5
+@while 100 >= $rounded
+    .br-#{$rounded}px
+        +border_radius(#{$rounded}px)
+    .br-#{$rounded}p
+        +border_radius(#{$rounded}+'%')
+    $rounded: $rounded + 5
+
+.br-0
+    +border_radius(0)
+.br-none
+    +border_radius(0!important)
+
+@media (min-width: 992px)
+    .w-md-75
+        width: 75% !important

@@ -1,0 +1,43 @@
+.container
+    @media (min-width: 1400px)
+        max-width: 1140px
+.col-lg-0
+    @media (min-width: 992px)
+        margin-left: 0
+.col-xl-0
+    @media (min-width: 1200px)
+        margin-left: 0
+
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-select ~ label::after
+    background-color: transparent
+
+
+.progress
+    height: 30px
+    background-color: var(--tc-grey-light-3)
+    // border: 1px solid $tc-white
+    z-index: 1
+    *
+        color: var(--tc-black)
+    .progress-bar
+        background-color: var(--tc-grey)
+        font-weight: bold
+        text-transform: uppercase
+        line-height: 30px
+        position: relative
+        text-align: left
+
+        padding-left: 20px
+        overflow: visible
+        white-space: nowrap
+
+body.dark-mode
+    .progress
+        background-color: var(--tc-blue-dark-2)
+    .progress-bar
+        background-color: var(--tc-blue-dark-1)
+        *
+            color: var(--tc-white) !important
