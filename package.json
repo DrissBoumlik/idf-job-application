@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://drissboumlik.github.io/aboutme/",
+  "homepage": "https://drissboumlik.github.io/idf-job-application//",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
