@@ -94,8 +94,4 @@ function toggleDarkMode(element, classes, cookieData) {
     }
 }
 
-function getMyAge() {
-    return ((new Date()).getFullYear() - 1989);
-}
-
-export { initParticlesJS, initDarkMode, getMyAge, animatedWelcome };
+export { initParticlesJS, initDarkMode, animatedWelcome };
